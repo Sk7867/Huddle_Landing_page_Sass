@@ -1,0 +1,55 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  .social {
+    width: 105px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px auto 40px;
+
+    svg {
+      fill: $white;
+      height: 28px;
+      width: 28px;
+      @include transition-ease;
+
+      &:hover {
+        cursor: pointer;
+        fill: $soft-magenta;
+        transform: scale(1.2);
+      }
+
+      @media screen and (min-width: 768px) {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 155px;
+      margin: 65px auto 55px;
+    }
+
+    @media screen and (min-width: 1300px) {
+      margin: 0 50px 0 auto;
+    }
+  }
+
+  .attribution {
+    font-size: 16px;
+    text-align: center;
+    color: $white;
+    margin-bottom: 20px;
+  }
+  .attribution a {
+    color: hsl(41, 98%, 51%);
+  }
+
+  @media screen and (min-width: 1300px) {
+    flex-direction: column;
+  }
+}

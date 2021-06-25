@@ -1,0 +1,26 @@
+header {
+  width: 300px;
+  display: flex;
+  align-items: flex-start;
+  margin: 0 auto;
+  margin-top: 40px;
+
+  .huddle_logo img {
+    width: 130px;
+
+    @media screen and (min-width: 768px) {
+      width: 200px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 700px;
+    flex-direction: column;
+    margin-top: 35px;
+  }
+
+  @media screen and (min-width: 1300px) {
+    width: 1140px;
+    margin: 55px auto 30px;
+  }
+}
